@@ -1,0 +1,6 @@
+global function OddBall_Settings_Init
+void function OddBall_Settings_Init() {
+	AddPrivateMatchModeSettingEnum("#MODE_SETTING_CATEGORY_ODDBALLFFA", "Oddball", ["#SETTING_DISABLED", "#SETTING_ENABLED"], "0")
+	AddPrivateMatchModeSettingEnum("#MODE_SETTING_CATEGORY_ODDBALLFFA", "Carrier-Exclusive-Melee", ["#SETTING_DISABLED", "#SETTING_ENABLED"], "1")
+	AddPrivateMatchModeSettingArbitrary( "#MODE_SETTING_CATEGORY_ODDBALLFFA", "Battery-Timeout", "30" )
+}
